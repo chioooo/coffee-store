@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <title>Inicio de sesi&oacute;n</title>
+</head>
+
+<body>
+
+    <div id="agrupar">
+
+        <header id="cabecera">
+            <h1><img src="img/Vector.png" style="vertical-align: middle;"> Cofee-Store Inventory</h1>
+        </header>
+
+        <div id="seccion">
+            <form id="sing-in" action="php/sing-in.php" method="post">
+                <h2>Iniciar sesi&oacute;n</h2><br><br>
+
+                <div id="etiqueta">
+                    <label for="nomina">N&uacute;mero de nomina:</label><br>
+                    <input type="text" id="nomina" name="nomina" placeholder="Ingresa el numero de nomina"
+                        required><br><br>
+                </div><br><br><br><br>
+
+                <div id="etiqueta">
+                    <label for="pass">Contraseña:</label><br>
+                    <input type="password" id="pass" name="pass" placeholder="Ingresa la contraseña" required><br><br>
+                </div><br><br>
+
+                <div><button id="boton" type="submit">Acceder</button></div><br><br>
+
+                <div><button id="boton2"><a href="index.html">Regresar</a></button></div>
+
+            </form>
+        </div>
+
+    </div>
+</body>
+
+</html>

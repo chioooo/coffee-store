@@ -1,0 +1,199 @@
+body{
+    color: white;
+    position: relative;
+}
+*{
+    padding: 0%;
+    margin: 0%;
+}
+a{
+    color: #ffffff;
+    font-family: Arial, Helvetica, sans-serif;
+    text-decoration: none;
+    font-weight: bold;
+    font-size:larger;
+}
+
+ul{
+    list-style: none;
+}
+
+/*BARRA DE NAVEGACION WOW*/
+.barra{
+    background: #732487;
+    padding: 10px 0;
+    font-family: "Brush-script";
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 60px;
+}
+
+.nav-main{
+    padding-left: 30px;
+}
+
+.nav-menu-right{
+    padding-right: 30px;
+}
+
+nav button{
+    border: none;
+    outline: none;
+    background-color: #732487;
+    color: #ffffff;
+    cursor: pointer;
+    padding: 0%;
+    margin: 0%;
+}
+/* DEL ASIDE*/
+
+.opciones{
+    background-color: #caa9d0;
+    float: left;
+    width: 220px;
+    text-align: center;
+    border-right: 1px solid #732487;
+    height: 800px;
+}
+
+.opciones div{
+    padding: 15px;
+    align-items: center;
+    display: flex;
+}
+
+.catalogo{    
+    background-color: #caa9d0;
+    border-bottom: 1px solid #a770b2;
+}
+
+.copia{
+    border-bottom: 1px solid #a770b2;
+}
+
+.agregar{
+    border-bottom: 1px solid #a770b2;
+    display: flex;
+    justify-content:space-around;
+}
+
+.agregar button{
+    border: none;
+    outline: none;
+    background-color: #caa9d0;
+    color: #ffffff;
+    cursor: pointer;
+    padding: 0%;
+    margin: 0%;
+}
+
+ /*fin de barra de opciones*/
+/*inicio de la seccion de opciones*/
+section{
+    align-items: center;
+    margin: 30px;
+    padding: 30px;
+}
+section div{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+section .grid1{
+    display: flex;
+}
+
+section .grid2{
+    display: flex;
+}
+
+section button{
+    border: none;
+    outline: none;
+    cursor: pointer;
+    padding: 0%;
+    margin: 0%;
+}
+.grid1 .galletas , .papas{
+    background-color: #caa9d0;
+    padding: 35px;
+    border-radius: 5px;
+}
+
+.grid2 .bebidas,.insumos{
+    background-color: #caa9d0;    
+    border-radius: 5px;
+    padding: 30px;
+}
+
+.separador1{
+    margin: 0 6% 0;
+}
+
+.separador2{
+    margin: 20% 6% 0;
+}
+
+.contenido{
+    color:#000000;
+}
+
+
+table td{
+    border-bottom: 2px solid rgba(168, 168, 168, 0.575)
+}
+
+table{
+    display: flex;
+    justify-content: space-around;
+}
+
+table td, #tabla th {
+    padding: 30px;
+  }
+
+table th {
+    padding-top: 12px;
+    padding-bottom: 12px;
+    text-align: center;
+    color: rgb(0, 0, 0);
+  }
+
+/*buscador*/
+.buscador {
+    display: flex;
+    align-items: center;
+    width: 450px;
+    margin: 0 auto;
+    margin-bottom: 50px;
+  }
+  
+  .buscador input {
+    width: 80%;
+    padding: 5px 10px;
+    border: none;
+    outline: none;
+    font-size: 16px;
+    background-color: #caa9d0;
+    border-top-left-radius: 50px;
+    border-bottom-left-radius: 50px;
+  }
+  
+  .buscador button {
+    width: 20%;
+    padding: 5px 10px;
+    border: none;
+    outline: none;
+    background-color: #caa9d0;
+    color: #ffffff;
+    cursor: pointer;
+    border-top-right-radius: 50px;
+    border-bottom-right-radius: 50px;
+  }
+  
+  .buscador button:hover {
+    background-color: #a770b2;
+  }
+

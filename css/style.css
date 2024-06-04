@@ -1,0 +1,147 @@
+body{
+    text-align: center;
+}
+
+#cabecera{
+    position: relative;
+    color: #A770B2;
+    font-size: 20px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: 400;
+    word-wrap: break-word
+    
+}
+
+#seccion{
+    width: 600px; 
+    height: 600px; 
+    position: relative; 
+    background: #A770B2; 
+    flex-direction: column; 
+    justify-content: flex-start; 
+    display: inline-flex;
+}
+
+h2{
+    color: white;
+    font-size: 36px;
+    font-family: Sora;
+    font-weight: 700;
+    word-wrap: break-word;
+    text-align: center;
+}
+
+#etiqueta{
+    width: 400px; 
+    height: 90px; 
+    position: relative;
+    text-align: left;
+}
+
+#username{
+    width: 500px; 
+    height: 60px; 
+    left: 40px; 
+    top: 30px; 
+    position: absolute; 
+    background: #C59FCB; 
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.10); 
+    border-radius: 6px;
+    font-size: 17px; 
+    font-family: Sora; 
+    font-weight: 300; 
+    word-wrap: break-word;
+    text-align: justify;
+}
+
+#nomina{
+    width: 500px; 
+    height: 60px; 
+    left: 40px; 
+    top: 30px; 
+    position: absolute; 
+    background: #C59FCB; 
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.10); 
+    border-radius: 6px;
+    font-size: 17px; 
+    font-family: Sora; 
+    font-weight: 300; 
+    word-wrap: break-word;
+    text-align: justify;
+}
+
+#pass{
+    width: 500px; 
+    height: 60px; 
+    left: 40px; 
+    top: 30px; 
+    position: absolute; 
+    background: #C59FCB; 
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.10); 
+    border-radius: 6px;
+    font-size: 17px; 
+    font-family: Sora; 
+    font-weight: 300; 
+    word-wrap: break-word;
+    text-align: justify;
+}
+
+#fname::placeholder{
+    color: rgba(255, 255, 255, 0.50);
+}
+
+label{
+    color: white;
+    margin-left: 15%;
+    font-size: 18px;
+    font-family: Sora;
+    font-weight: 700;
+    word-wrap: break-word
+}
+
+#boton{
+    width: 4cm; 
+    height: 1.5cm; 
+    background: #884299; 
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.10); 
+    border-radius: 6px; overflow: hidden;
+    justify-content: center; 
+    align-items: center; 
+    display: inline-flex;
+    color: white;
+    font-size: 20px;
+    font-family: Sora;
+    font-weight: 700;
+    word-wrap: break-word;
+    cursor: pointer;
+}
+
+#boton2{
+    width: 120px; 
+    height: 41px; 
+    padding-top: 6px; 
+    padding-bottom: 10px; 
+    padding-left: 14px; 
+    padding-right: 13px; 
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.40); 
+    border-radius: 6px; 
+    overflow: hidden; 
+    border: 1px white solid; 
+    justify-content: center; 
+    align-items: center; 
+    display: inline-flex;
+    text-align: left; 
+    float: left;
+    margin-left: 30px;
+    color: white; 
+    font-size: 20px; 
+    font-family: Sora; 
+    font-weight: 700; 
+    word-wrap: break-word;
+    background:none;
+}
+
+a{
+    color: white;
+    text-decoration: none;
+}

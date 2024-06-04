@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="en">
+<!-- Resto del código -->
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http‐equiv="refresh" content="20;URL=./2PantillaBasica.htm">
+    <title>Agregar</title>
+    <!--FONT AWESONE-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <link rel="stylesheet" type="text/css" href="css/normalize.css">
+    <link rel="stylesheet" type="text/css" href="css/style_agregar.css">
+
+    <style>
+        input[type=text],
+        select,
+        textarea {
+            width: 100%;
+            padding: 12px;
+            border-radius: 4px;
+            resize: vertical;
+        }
+
+        input[type=number]::-webkit-inner-spin-button,
+        input[type=number]::-webkit-outer-spin-button {
+            -webkit-appearance: none;
+            margin: 0;
+
+        }
+
+        input[type=number] {
+            -moz-appearance: textfield;
+            width: 100%;
+            padding: 12px;
+            border-radius: 4px;
+            resize: vertical;
+        }
+
+        .col-25 {
+            float: left;
+            width: 25%;
+            margin-top: 6px;
+        }
+
+        .col-75 {
+            float: left;
+            width: 75%;
+            margin-top: 6px;
+        }
+
+        /* Clear floats after the columns */
+        .row:after {
+            content: "";
+            display: table;
+            clear: both;
+        }
+
+        input[type=submit] {
+            background-color: #804595;
+            color: white;
+            border: none;
+
+            cursor: pointer;
+            float: right;
+        }
+
+        .mensaje-notificacion {
+            display: none;
+            /* Inicialmente oculto */
+            background-color: #4caf50;
+            color: #ffffff;
+            padding: 10px;
+            border-radius: 5px;
+            margin-top: 10px;
+        }
+    </style>
+
+</head>
+
+<body>
+    <nav class="barra">
+        <ul class="nav-main">
+            <li>
+                <button type="button"><i class="fa fa-bars"></i></button>
+            </li>
+        </ul>
+        <i class="fa fa-coffee">Coffee-Store Inventory</i>
+        <ul class="nav-menu-right">
+            <li>
+                <button type="button"><a href="index.html"><i class="fa fa-sign-out"></a></i></button>
+            </li>
+        </ul>
+    </nav>
+    <!--FIN DEL NAV WOW-->
+    <aside class="opciones">
+        <div class="catalogo">
+            <i class="fa fa-book"></i> <a href="catalogo.html">Cat&aacute;logo de productos</a>
+        </div>
+        <div class="copia">
+            <i class="fa fa-cloud-upload"></i> <a href="copia.html">Copia de seguridad</a>
+        </div>
+        <div class="agregar">
+            <i class="fa fa-plus-circle"></i><a href="AGREGAR.html">Agregar</a>
+        </div>
+        <div class="eliminar">
+            <i class="fa fa-trash"></i><a href="ELIMINAR.html">Eliminar</a>
+        </div>
+    </aside>
+    <!--TERMINA LA BARRA DE OPCIONES-->
+
+    <section class="contenido">
+        <div class="formulario" style="background-color: #a981b6; width: 500px; height: 500px">
+
+                <form action="php/add.php" method="post">
+                    <h1>Agregar Nuevo Producto</h1>
+                    <div class="row">
+                        <div class="col-25">
+                            <label for="categoria">Categoría:</label>
+                        </div>
+                        <div class="col-75">
+                            <select id="categoria" name="categoria" style="color: #75757f;" required>
+                                <option value="">Elije una categoria</option>
+                                <option value="galletas">Galletas</option>
+                                <option value="papas">Papas</option>
+                                <option value="bebidas">Bebidas</option>
+                                <option value="insumos">Insumos</option>
+                                <!-- Agrega más opciones según tus necesidades -->
+                            </select>
+                        </div>
+                    </div>
+
+                    <div class="row">
+                        <div class="col-25">
+                            <label for="id">ID:</label>
+                        </div>
+                        <div class="col-75">
+                            <input type="text" id="id" name="id" placeholder="Ingrese el ID" required>
+                        </div>
+                    </div>
+
+                    <div class="row">
+                        <div class="col-25">
+                            <label for="nombre">Nombre:</label>
+                        </div>
+                        <div class="col-75">
+                            <input type="text" id="nombre" name="nombre" placeholder="Ingrese el nombre" required>
+                        </div>
+                    </div>
+
+                    <div class="row">
+                        <div class="col-25">
+                            <label for="precio">Precio:</label>
+                        </div>
+                        <div class="col-75">
+                            <input type="number" id="precio" name="precio" min="0" step="0.01"
+                                placeholder="Ingrese el precio" required>
+                        </div>
+                    </div>
+
+                    <div class="row">
+                        <div class="col-25">
+                            <label for="cantidad">Cantidad:</label>
+                        </div>
+                        <div class="col-75">
+                            <input type="number" id="cantidad" name="cantidad" min="1" placeholder="ingrese la cantidad"
+                                required>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <input type="submit" value="Enviar">
+                    </div>
+
+
+                </form>
+
+        </div>
+
+    </section>
+</body>
+
+</html>
